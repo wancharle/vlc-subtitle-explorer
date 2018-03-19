@@ -16,20 +16,6 @@ local g_subtitles = {
 local sia_settings =
 {
     charset = "iso-8859-1",          -- works for english and french subtitles (try also "Windows-1252")
-    dict_dir = "/Users/wancharle/dicts",            -- where Stardict dictionaries are located
-    wordnet_dir = "/Users/wancharle/dicts/wordnet", -- where WordNet files are located
-    chosen_dict = "/Users/wancharle/dicts/Babylon_English_Portuguese", -- Stardict dictionary used by default (there should be 3 files with this name but different extensions)
-    words_file_path = nil, -- if 'nil' then "Desktop/sia_words.txt" will be used
-    always_show_subtitles = false,
-    osd_position = "top",
-    help_duration = 6, -- sec; change to nil to disable osd help
-    log_enable = true, -- Logs can be viewed in the console (Ctrl-M)
-    definition_separator = "<br />", -- separator used if multiple definitions are selected for saving
-
-    key_prev_subt = 121, -- y
-    key_next_subt = 117, -- u
-    key_again = 8, -- backspace
-    key_save = 105, -- i
 }
 
 
@@ -86,7 +72,7 @@ end
 function descriptor()
     return {
         title = "Subtitle Explorer",
-        version = "0.0.1";
+        version = "0.9.0";
         author = "wancharle",
         url = 'http://wancharle.com.br',
         shortdesc = "Navigate freely through the subtitle list and then sync your movie.",
